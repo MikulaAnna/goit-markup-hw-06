@@ -758,6 +758,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .footer .container {
+    max-width: 1158px;
     gap: 0;
   }
   .footer__info {
