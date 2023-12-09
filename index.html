@@ -21,7 +21,7 @@
 
 	<header class="header">
 
-		<div class="container">
+		<div class="header__container container">
 
 			<nav class="header__menu menu">
 
@@ -41,6 +41,82 @@
 					<li class="address__item"><a class="address__link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
 				</ul>
 			</address>
+
+			<button class="header__burger menu-btn-open" type="button">
+				<svg width="24" height="24" aria-label="mobile menu open icon">
+					<use href="./images/icons.svg#icon-burger"></use>
+				</svg>
+			</button>
+
+			<div class="mobile-menu">
+
+				<div class="mobile-menu__container container">
+					<button class="mobile-menu__button menu-btn-close" type="button">
+						<svg width="8" height="8">
+							<use href="./images/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+
+
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item"><a class="mobile-menu__link" href="#about">Studio</a></li>
+						<li class="mobile-menu__item"><a class="mobile-menu__link" href="#why">Portfolio</a></li>
+						<li class="mobile-menu__item"><a class="mobile-menu__link" href="#procedures">Contacts</a></li>
+
+					</ul>
+
+
+					<address class="mobile-menu__address address-mobile">
+						<ul class="address-mobile__list">
+							<li class="address-mobile__item"><a class="address-mobile__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+							<li class="address-mobile__item"><a class="address-mobile__link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+						</ul>
+						<ul class="address-mobile__social social">
+							<li class="social__item">
+								<a href="https://www.instagram.com/" target="_blank" class="social__link">
+									<svg class="icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="social__item">
+								<a href="https://www.twitter.com/" target="_blank" class="social__link">
+									<svg class="icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="social__item">
+								<a href="https://www.facebook.com/" target="_blank" class="social__link">
+									<svg class="icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="social__item">
+								<a href="https://www.linkedin.com/" target="_blank" class="social__link">
+									<svg class="icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+					</address>
+
+				</div>
+
+
+
+
+
+
+
+			</div>
+
 
 		</div>
 
@@ -70,8 +146,8 @@
 								<use href="./images/icons.svg#icon-antenna"></use>
 							</svg>
 						</div>
-						<h3 class="advantages__subtitle subtitle">Strategy</h3>
-						<p class="advantages__text text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+						<h3 class="advantages__subtitle">Strategy</h3>
+						<p class="advantages__text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
 					</li>
 
 					<li class="advantages__item">
@@ -80,8 +156,8 @@
 								<use href="./images/icons.svg#icon-clock"></use>
 							</svg>
 						</div>
-						<h3 class="advantages__subtitle subtitle">Punctuality</h3>
-						<p class="advantages__text text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+						<h3 class="advantages__subtitle">Punctuality</h3>
+						<p class="advantages__text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
 					</li>
 
 					<li class="advantages__item">
@@ -90,8 +166,8 @@
 								<use href="./images/icons.svg#icon-diagram"></use>
 							</svg>
 						</div>
-						<h3 class="advantages__subtitle subtitle">Diligence</h3>
-						<p class="advantages__text text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+						<h3 class="advantages__subtitle">Diligence</h3>
+						<p class="advantages__text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
 					</li>
 
 					<li class="advantages__item">
@@ -100,8 +176,8 @@
 								<use href="./images/icons.svg#icon-astronaut"></use>
 							</svg>
 						</div>
-						<h3 class="advantages__subtitle subtitle">Technologies</h3>
-						<p class="advantages__text text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+						<h3 class="advantages__subtitle">Technologies</h3>
+						<p class="advantages__text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
 					</li>
 				</ul>
 
@@ -119,7 +195,7 @@
 				<ul class="team__list">
 					<li class="team__item">
 
-						<img src="./images/our-team/product-designer.jpg" alt="product designer" width="264" height="260">
+						<img srcset="./images/our-team/product-designer@2x.jpg 2x" src=" ./images/our-team/product-designer.jpg" alt="product designer" width="264" height="260">
 						<div class="team__info">
 							<h3 class="team__subtitle subtitle">Mark Guerrero</h3>
 							<p class="team__text text">Product Designer</p>
@@ -165,7 +241,7 @@
 
 					<li class="team__item">
 
-						<img src="./images/our-team/frontend-developer.jpg" alt="frontend developer" width="264" height="260">
+						<img srcset="./images/our-team/frontend-developer@2x.jpg 2x" src="./images/our-team/frontend-developer.jpg" alt="frontend developer" width="264" height="260">
 						<div class="team__info">
 							<h3 class="team__subtitle subtitle">Tom Ford</h3>
 							<p class="team__text text">Frontend Developer</p>
@@ -211,7 +287,7 @@
 
 					<li class="team__item">
 
-						<img src="./images/our-team/marketing.jpg" alt="marketing" width="264" height="260">
+						<img srcset="./images/our-team/marketing@2x.jpg 2x" src="./images/our-team/marketing.jpg" alt="marketing" width="264" height="260">
 						<div class="team__info">
 							<h3 class="team__subtitle subtitle">Camila Garcia</h3>
 							<p class="team__text text">Marketing</p>
@@ -257,7 +333,7 @@
 
 					<li class="team__item">
 
-						<img src="./images/our-team/ui-designer.jpg" alt="ui designer" width="264" height="260">
+						<img srcset="./images/our-team/ui-designer@2x.jpg 2x" src="./images/our-team/ui-designer.jpg" alt="ui designer" width="264" height="260">
 						<div class="team__info">
 							<h3 class="team__subtitle subtitle">Daniel Wilson</h3>
 							<p class="team__text text">UI Designer</p>
@@ -314,7 +390,24 @@
 				<ul class="portfolio__list">
 					<li class="portfolio__item">
 						<div class="portfolio__image">
-							<img src="./images/our-portfolio/banking-app.jpg" alt="banking app" width="360" height="300">
+							<picture>
+								<source srcset="
+							   ./images/our-portfolio/banking-desktop.jpg    1x,
+								./images/our-portfolio/banking-desktop@2x.jpg 2x
+							   " media="(min-width: 1200px)" />
+
+								<source srcset="
+							   ./images/our-portfolio/banking-tablet.jpg    1x,
+							   ./images/our-portfolio/banking-tablet@2x.jpg 2x
+							   " media="(min-width: 768px)" />
+
+								<source srcset="
+							   ./images/our-portfolio/banking-mobile.jpg    1x,
+							   ./images/our-portfolio/banking-mobile@2x.jpg 2x
+							   " media="(max-width: 768px)" />
+
+								<img src="./images/our-portfolio/banking-mobile.jpg" alt="retina image" />
+							</picture>
 
 							<p class="portfolio__overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
 
@@ -331,7 +424,24 @@
 
 					<li class="portfolio__item">
 						<div class="portfolio__image">
-							<img src="./images/our-portfolio/cashless-payment.jpg" alt="cashless payment" width="360" height="300">
+							<picture>
+								<source srcset="
+							   ./images/our-portfolio/cashless-desktop.jpg    1x,
+							   ./images/our-portfolio/cashless-desktop@2x.jpg 2x
+							   " media="(min-width: 1200px)" />
+
+								<source srcset="
+							   ./images/our-portfolio/cashless-tablet.jpg    1x,
+							   ./images/our-portfolio/cashless-tablet@2x.jpg 2x
+							   " media="(min-width: 768px)" />
+
+								<source srcset="
+							   ./images/our-portfolio/cashless-mobile.jpg    1x,
+								./images/our-portfolio/cashless-mobile@2x.jpg 2x
+								 " media="(max-width: 768px)" />
+
+								<img src="./images/our-portfolio/cashless-mobile.jpg" alt="retina image" />
+							</picture>
 
 							<p class="portfolio__overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
 
@@ -346,7 +456,24 @@
 
 					<li class="portfolio__item">
 						<div class="portfolio__image">
-							<img src="./images/our-portfolio/meditation-app.jpg" alt="meditation app" width="360" height="300">
+							<picture>
+								<source srcset="
+								./images/our-portfolio/meditation-desktop.jpg    1x,
+								./images/our-portfolio/meditation-desktop@2x.jpg 2x
+								" media="(min-width: 1200px)" />
+
+								<source srcset="
+								./images/our-portfolio/meditation-tablet.jpg    1x,
+								./images/our-portfolio/meditation-tablet@2x.jpg 2x
+								 " media="(min-width: 768px)" />
+
+								<source srcset="
+								./images/our-portfolio/meditation-mobile.jpg    1x,
+								./images/our-portfolio/meditation-mobile@2x.jpg 2x
+								" media="(max-width: 768px)" />
+
+								<img src="./images/our-portfolio/meditation-mobile.jpg" alt="retina image" />
+							</picture>
 
 							<p class="portfolio__overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
 
@@ -361,7 +488,24 @@
 
 					<li class="portfolio__item">
 						<div class="portfolio__image">
-							<img src="./images/our-portfolio/taxi-service.jpg" alt="taxi service" width="360" height="300">
+							<picture>
+								<source srcset="
+								./images/our-portfolio/taxi-desktop.jpg    1x,
+								 ./images/our-portfolio/taxi-desktop@2x.jpg 2x
+								" media="(min-width: 1200px)" />
+
+								<source srcset="
+								./images/our-portfolio/taxi-tablet.jpg    1x,
+								./images/our-portfolio/taxi-tablet@2x.jpg 2x
+								" media="(min-width: 768px)" />
+
+								<source srcset="
+								./images/our-portfolio/taxi-mobile.jpg    1x,
+								./images/our-portfolio/taxi-mobile@2x.jpg 2x
+								" media="(max-width: 768px)" />
+
+								<img src="./images/our-portfolio/taxi-mobile.jpg" alt="retina image" />
+							</picture>
 
 							<p class="portfolio__overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
 
@@ -376,7 +520,24 @@
 
 					<li class="portfolio__item">
 						<div class="portfolio__image">
-							<img src="./images/our-portfolio/screen-illustrations.jpg" alt="screen illustrations" width="360" height="300">
+							<picture>
+								<source srcset="
+								 ./images/our-portfolio/screen-desktop.jpg    1x,
+								./images/our-portfolio/screen-desktop@2x.jpg 2x
+								" media="(min-width: 1200px)" />
+
+								<source srcset="
+								 ./images/our-portfolio/screen-tablet.jpg    1x,
+								./images/our-portfolio/screen-tablet@2x.jpg 2x
+								" media="(min-width: 768px)" />
+
+								<source srcset="
+								./images/our-portfolio/screen-mobile.jpg    1x,
+								./images/our-portfolio/screen-mobile@2x.jpg 2x
+								" media="(max-width: 768px)" />
+
+								<img src="./images/our-portfolio/screen-mobile.jpg" alt="retina image" />
+							</picture>
 
 							<p class="portfolio__overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
 
@@ -391,7 +552,24 @@
 
 					<li class="portfolio__item">
 						<div class="portfolio__image">
-							<img src="./images/our-portfolio/online-courses.jpg" alt="online courses" width="360" height="300">
+							<picture>
+								<source srcset="
+									./images/our-portfolio/online-desktop.jpg    1x,
+									./images/our-portfolio/online-desktop@2x.jpg 2x
+									" media="(min-width: 1200px)" />
+
+								<source srcset="
+									./images/our-portfolio/online-tablet.jpg    1x,
+									./images/our-portfolio/online-tablet@2x.jpg 2x
+									" media="(min-width: 768px)" />
+
+								<source srcset="
+									./images/our-portfolio/online-mobile.jpg    1x,
+									./images/our-portfolio/online-mobile@2x.jpg 2x
+									" media="(max-width: 768px)" />
+
+								<img src="./images/our-portfolio/online-mobile.jpg" alt="retina image" />
+							</picture>
 
 							<p class="portfolio__overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
 
@@ -419,7 +597,7 @@
 
 			<div class="footer__info">
 				<a class="footer__logo logo" href="./index.html">Web<span class="logo__accent">Studio</span></a>
-				<p class="footer__discribe">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+				<p class="footer__describe">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
 			</div>
 
 
@@ -487,7 +665,7 @@
 
 
 
-	<div class="backdrop is-open">
+	<div class="backdrop">
 		<div class="modal">
 
 			<button class="modal__button" type="button">
