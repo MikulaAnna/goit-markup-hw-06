@@ -120,6 +120,10 @@ body {
 .social__link:focus {
   background-color: #404bbf;
 }
+.footer__icons .social__link:hover,
+.footer__icons .social__link:focus {
+  background-color: #31d0aa;
+}
 
 .button {
   background: #4d5ae5;
